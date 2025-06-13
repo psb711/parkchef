@@ -42,12 +42,13 @@ button {
 
 // 헤더
 header{ position:fixed;
-  z-index: 999; width: 100%;}
+  z-index: 999; width: 100%;
+}
 .bg-body-tertiary {
   
   height: 80px;
 }
-.navbar-collapse{background-color: white;}
+.navbar-collapse{background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)) !important;; z-index: 999;}
 
 // 메인슬라이더
 .mySwiper {
