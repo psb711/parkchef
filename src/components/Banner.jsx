@@ -7,7 +7,7 @@ const Banner = () => {
   <Row className="Banner">
   <Col className="imgbox" sm={6}>
     <img
-      src={process.env.PUBLIC_URL + '/img/istockphoto-926774114-1024x1024.jpg'}
+      src={process.env.PUBLIC_URL + '/img/hotbuigogicover.png'}
       alt="매운불고기"
     />
   </Col>

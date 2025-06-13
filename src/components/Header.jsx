@@ -7,6 +7,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function Header() {
   return (
+    <header>
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
       <Container>
         <Navbar.Brand href="#home"><img src={process.env.PUBLIC_URL + '/img/logo.png'} alt="" /></Navbar.Brand>
@@ -36,6 +37,7 @@ function Header() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    </header>
   );
 }
 

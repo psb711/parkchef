@@ -2,6 +2,7 @@
 import './App.scss';
 import Banner from './components/Banner';
 import Banner2 from './components/Banner2';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import Mainslider from './components/Mainslider';
 import Secondslider from './components/Secondslider';
@@ -17,6 +18,8 @@ function App() {
       <Banner></Banner>
       <Banner2></Banner2>
       <Thirdslider></Thirdslider>
+        <Footer></Footer>
+
 
 
     </div>

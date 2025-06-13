@@ -1,172 +1,222 @@
-$Pchef:rgb(234, 70, 43);
+$Pchef: rgb(234, 70, 43);
+
 @font-face {
-    font-family: 'SEBANG_Gothic_Bold';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'SEBANG_Gothic_Bold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
-h3,h4,h5{font-family:'SEBANG_Gothic_Bold' ;}
-button{ 
-   all:unset ;
-   color: #23292c;
-    font-size: 18px;
-    padding: 10px 35px;
-    border: 1px solid #ea462b;
-    font-weight: 600;
-    transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    margin: 0;
- &:hover {
+h3{margin-top: 40px;}
+h3,
+h4,
+h5 {
+  font-family: 'SEBANG_Gothic_Bold';
+}
+
+button {
+  all: unset;
+  color: #23292c;
+  font-size: 18px;
+  padding: 10px 35px;
+  border: 1px solid #ea462b;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  margin: 0;
+
+  &:hover {
     color: #ffffff;
     background: #ea462b;
-    cursor:pointer;
+    cursor: pointer;
 
-}}
+  }
+}
 
-.container{padding: 0;}
+.container {
+
+  padding: 0;
+  text-align: center;
+}
+
 // 헤더
-.bg-body-tertiary{height: 80px;}
+header{ position:fixed;
+  z-index: 999; width: 100%;}
+.bg-body-tertiary {
+  
+  height: 80px;
+}
+.navbar-collapse{background-color: white;}
+
 // 메인슬라이더
-.mySwiper{.swiper {
+.mySwiper {
+  height: 42vw !important;
+  // position: relative;
   width: 100%;
   height: 100%;
-  background: #000;
+
+  .container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    .txtbox {
+width: 50%;
+    text-align: center;
+ margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  }
+
+
+  
+
+
+
+  .swiper-slide {
+    background-position: right center;
+    background-size: cover;
+
+  }
+
+  .swiper-slide img {
+    display: block;
+  }
+
+
+
+
+
 }
 
-.swiper-slide {
-  font-size: 18px;
-  color: #fff;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 40px 60px;
+.swiper.mySwiper {
+  height: 42vw;
+  position: relative;
 }
 
-.parallax-bg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 130%;
-  height: 100%;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center;
-}
-
-.swiper-slide .title {
-  font-size: 41px;
-  font-weight: 300;
-}
-
-.swiper-slide .subtitle {
-  font-size: 21px;
-}
-
-.swiper-slide .text {
-  font-size: 14px;
-  max-width: 400px;
-  line-height: 1.3;
-}
-}
 
 
 // 세컨드슬라이더 (인기상품)
 
-.SCC{background-image: url(../public/img/back.png); background-position-x: center; text-align: center;
+.SCC {
+  background-image: url(../public/img/back.png);
+  background-position: center;
+    background-size: cover;  
+
+  text-align: center;
+    margin: 80px 0;
 }
+
+
+
 .mySwiper2 {
-   .swiper {
-      width: 100%;
-      height: 100%;
-      background-color: aqua;
-   }
 
-   .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #aa5252;
-      width: 300px;
+  .swiper {
+    width: 100%;
+    height: 100%;
 
-      /* Center slide text vertically */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #f8f8f8;
+    width: 300px;
+       height: 100%;
+       margin: 10px 0;
+       padding: 10px 5px;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-   }
-
-   .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      background-color: #1f0000;
-   }
-  .imgbox{width: 95%;height: 70%; background-color: #ea462b; display: block; overflow: hidden;}
-  .txtbox{margin-bottom: 25px;}
-  
-}
-.mySwiper2 {
-  height: 400px; /* 기본 높이 */
-}
-
-@media (max-width: 1024px) {
-  .mySwiper2 {
-    height: 400px;
   }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+  }
+
+  .imgbox {
+    width: 95%;
+   
+    background-color: #9b6b64;
+    display: block;
+    overflow: hidden;
+
+  }
+
+  .txtbox {
+    margin-bottom: 20px;
+  }
+
 }
 
-@media (max-width: 768px) {
-  .mySwiper2 {
-    height: 300px;
-  }
-}
 
-@media (max-width: 640px) {
-  .mySwiper2 {
-    height: 450px;
-  }
-}
+
 // 배너 (추천상품)
-.Banner{
-//    display: flex;
-//    align-items: center;
-   .imgbox{
-      background-color: aqua; 
-      // width: 50%;
-      height: 45vw;
-      img{width: 100%;}
-   }
-//    .txtbox{width: 50%;height: 45vh;}
+.Banner { text-align: center;
+margin: 15px 0;
+
+  .imgbox {
+
+
+    img {
+      width: 100%;
+    }
+  }
+
+     .txtbox{margin-top: 10%;}
 }
+
 // 배너2 (해썹인증 깔끔한공장)
-.Banner2{
- background-color: rgb(0, 0, 0); width: 100%;height: 45vw;}
+.Banner2 {
+  background-color: rgb(174, 204, 200);
+  width: 100%;
+  height: 45vw;
+}
 
 //  세번째슬라이드 고객리뷰
-.mySwiper3{.swiper {
-  width: 100%;
-  height: 100%;
-}
+.mySwiper3 {  margin: 0 auto;
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #444;
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    height: 45vh;
 
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     align-items: center;
+    justify-content: space-evenly;
+  }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .imgbox{background-color: #f8f8f8; width: 80%; height: 60%;}
+  .txtbox{
+    p{font-size: 0.9rem; }
+   
+  } .ReIn{font-size: 0.8rem;margin: 0 100px -20px 0 ;}
 }
-}
-  

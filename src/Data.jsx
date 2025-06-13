@@ -1,7 +1,7 @@
 const Data=[
 {
    id:0,
-    imageSrc:process.env.PUBLIC_URL + '../img/pork2kg.jpg',
+    imageSrc:process.env.PUBLIC_URL + '/img/pork2kg.jpg',
    altText:"흑마늘 양념 돼지갈비 400g",
    title:"흑마늘 양념 돼지갈비 400g*3",
    description:"혼밥에도 세 번 즐기는 깊은 프리미엄",
