@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/parkchef/static/css/main.840326e5.css",
+    "main.js": "/parkchef/static/js/main.7b331d6a.js",
+    "static/js/453.e064a2ea.chunk.js": "/parkchef/static/js/453.e064a2ea.chunk.js",
+    "static/media/back.png": "/parkchef/static/media/back.f898fe20b2e6405974a8.png",
+    "index.html": "/parkchef/index.html",
+    "main.840326e5.css.map": "/parkchef/static/css/main.840326e5.css.map",
+    "main.7b331d6a.js.map": "/parkchef/static/js/main.7b331d6a.js.map",
+    "453.e064a2ea.chunk.js.map": "/parkchef/static/js/453.e064a2ea.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.840326e5.css",
+    "static/js/main.7b331d6a.js"
+  ]
+}
